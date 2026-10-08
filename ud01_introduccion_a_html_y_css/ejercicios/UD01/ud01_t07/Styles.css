@@ -1,0 +1,40 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    border: 2px solid black;
+}
+.enunciado {
+    background-color: aquamarine;
+}
+.hora {
+    background-color: cyan;
+}
+.dia {
+    background-color: darkgrey;
+}
+.BD {
+    background-color: pink;
+}
+.ContDes {
+    background-color: orange;
+}
+.IngProf {
+    background-color: greenyellow;
+}
+.lima {
+    background-color: indianred;
+}
+.ipe {
+    background-color: skyblue;
+}
+.SI{
+    background-color: magenta;
+}
+.sost {
+    background-color: darkturquoise;
+}
+.prog {
+    background-color: green;
+}

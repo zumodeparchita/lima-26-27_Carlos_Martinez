@@ -4,86 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario de clases</title>
+    <meta name="author" content="Carlos Martinez" >
+    <link rel="stylesheet" type="text/css" href="Styles.css" >
 </head>
 <body>
-    <table border="1">
+    <table>
         <thead>
             <tr>
-                <th scope="col" colspan="6">1º DAM</th>
+                <th class="enunciado" scope="colgroup" colspan="6">1º DAM</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Hora</td>
-                <td>Lunes</td>
-                <td>Martes</td>
-                <td>Miércoles</td>
-                <td>Jueves</td>
-                <td>Viernes</td>
+                <th class="hora" scope="row" >Hora</th>
+                <th class="dia" scope="col" >Lunes</th>
+                <th class="dia" scope="col" >Martes</th>
+                <th class="dia" scope="col" >Miércoles</th>
+                <th class="dia" scope="col" >Jueves</th>
+                <th class="dia" scope="col" >Viernes</th>
             </tr>
             <tr>
-                <td>8:30<br>9:20</td>
-                <td rowspan="2">BD <br> Erica Aula 1º DAM</td>
-                <td>ContDes<br>Cristina Aula 1º DAM</td>
-                <td>IngProf <br> Cristina Aula 1º DAM</td>
-                <td rowspan="2">BD <br> Erica Aula 1º DAM</td>
-                <td rowspan="2">LIMA <br> Janeiro Aula 1º DAM</td>
+                <th class="hora" scope="row">8:30<br>9:20</th>
+                <td class="BD" rowspan="2">BD <br> Erica Aula 1º DAM</td>
+                <td class="ContDes" >ContDes<br>Cristina Aula 1º DAM</td>
+                <td class="IngProf" >IngProf <br> Cristina Aula 1º DAM</td>
+                <td class="BD" rowspan="2">BD <br> Erica Aula 1º DAM</td>
+                <td class="lima" rowspan="2">LIMA <br> Janeiro Aula 1º DAM</td>
             </tr>
             <tr>
-                <td>9:20 <br> 10:10</td>
-                <td>LIMA <br> Janeiro Aula 1º DAM</td>
-                <td>ContDes <br> Cristina Aula 1º DAM</td>
+                <th class="hora" scope="row">9:20 <br> 10:10</th>
+                <td class="lima" >LIMA <br> Janeiro Aula 1º DAM</td>
+                <td class="ContDes" >ContDes <br> Cristina Aula 1º DAM</td>
             </tr>
             <tr>
-                <td>10:10 <br> 10:30</td>
-                <td colspan="5">Recreo</td>
+                <th class="hora" scope="row">10:10 <br> 10:30</th>
+                <th class="enunciado" colspan="5">Recreo</th>
             </tr>
             <tr>
-                <td>10:30 <br> 11:20</td>
-                <td>ItPerEmpl <br> Iria V. Aula 1º DAM</td>
-                <td>IngProf <br> Cristina Aula 1º DAM</td>
-                <td rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
-                <td>LIMA <br> Janeiro Aula 1º DAM</td>
-                <td rowspan="2">Prog <br> Toni Aula 1° DAM</td>
+                <th class="hora" scope="row">10:30 <br> 11:20</th>
+                <td class="ipe" >ItPerEmpl <br> Iria V. Aula 1º DAM</td>
+                <td class="IngProf" >IngProf <br> Cristina Aula 1º DAM</td>
+                <td class="SI" rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
+                <td class="lima" >LIMA <br> Janeiro Aula 1º DAM</td>
+                <td class="prog" rowspan="2">Prog <br> Toni Aula 1° DAM</td>
             </tr>
             <tr>
-                <td>11:20 <br> 12:10</td>
-                <td>ContDes <br> Cristina Aula 1° DAM</td>
-                <td>BD <br> Erica Aula 1° DAM</td>
-                <td>SustAplicSistProd <br> Iria V. Aula 1° DAM</td>
+                <th class="hora" scope="row">11:20 <br> 12:10</th>
+                <td class="ContDes" >ContDes <br> Cristina Aula 1° DAM</td>
+                <td class="BD" >BD <br> Erica Aula 1° DAM</td>
+                <td class="sost" >SustAplicSistProd <br> Iria V. Aula 1° DAM</td>
             </tr>
             <tr>
-                <td>12:10 <br> 12:30</td>
-                <td colspan="5">Recreo</td>
+                <th class="hora" scope="row">12:10 <br> 12:30</th>
+                <th class="enunciado" colspan="5">Recreo</th>
             </tr>
             <tr>
-                <td>12:30 <br> 13:20</td>
-                <td rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
-                <td rowspan="2">Prog <br> Toni Aula 1° DAM</td>
-                <td rowspan="2">BD <br> Erica Aula 1° DAM</td>
-                <td rowspan="2">Prog <br> Toni Aula 1° DAM</td>
-                <td rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
+                <th class="hora" scope="row">12:30 <br> 13:20</th>
+                <td class="SI" rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
+                <td class="prog" rowspan="2">Prog <br> Toni Aula 1° DAM</td>
+                <td class="BD" rowspan="2">BD <br> Erica Aula 1° DAM</td>
+                <td class="prog" rowspan="2">Prog <br> Toni Aula 1° DAM</td>
+                <td class="SI" rowspan="2">SistInf <br> Lucas Aula 1° DAM</td>
             </tr>
             <tr>
-                <td>13:20 <br> 14:10</td>
+                <th class="hora" scope="row">13:20 <br> 14:10</th>
             </tr>
             <tr>
-                <td>14:10 <br> 14:50</td>
-                <td colspan="5">Mediodia</td>
+                <th class="hora" scope="row">14:10 <br> 14:50</th>
+                <th class="enunciado" colspan="5">Mediodia</th>
             </tr>
             <tr>
-                <td>14:50 <br> 15:40</td>
-                <td rowspan="3">Prog <br> Toni Aula 1° DAM</td>
+                <th class="hora" scope="row">14:50 <br> 15:40</th>
+                <td class="prog" rowspan="3">Prog <br> Toni Aula 1° DAM</td>
                 <td rowspan="3"></td>
-                <td rowspan="3">ItPerEmpl <br> Iria V. Aula 1° DAM</td>
+                <td class="ipe" rowspan="3">ItPerEmpl <br> Iria V. Aula 1° DAM</td>
                 <td rowspan="3"></td>
                 <td rowspan="3"></td>
             </tr>
             <tr>
-                <td>15:40 <br> 16:30</td>
+                <th class="hora" scope="row">15:40 <br> 16:30</th>
             </tr>
             <tr>
-                <td>16:30 <br> 17:20</td>
+                <th class="hora" scope="row">16:30 <br> 17:20</th>
             </tr>
         </tbody>
         <tfoot></tfoot>
