@@ -1,0 +1,27 @@
+* {
+    background-color: #c8f5c8;
+    font-family:sans-serif;
+}
+
+header > h1{
+    color: red;
+}
+
+h2 {
+    color: brown;
+}
+ul, p{
+    color: blue;
+    margin-bottom: 20px;
+}
+strong{
+    color: green;
+}
+.internet {
+    font-size: 20px;
+    color: blue;
+}
+.remarcado{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,22 @@
+* {
+    background-color: lightgrey;
+}
+p, h1, h2, h3 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: right;
+}
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+.ultimahr {
+    margin-left: 200px;
+    margin-right: 200px;
+}
