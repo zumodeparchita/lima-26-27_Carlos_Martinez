@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+}
+h1, h2{
+    color: #800000;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #800000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.remarcado {
+    background-color: red;
+    color: white;
+}
+abbr {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+blockquote{
+    background-color: #e2e2e2;
+    border-left: solid #800000;
+    font-style: italic;
+    padding: 1px 10px;
+}
