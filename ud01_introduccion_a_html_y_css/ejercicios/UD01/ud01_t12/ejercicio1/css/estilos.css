@@ -1,0 +1,28 @@
+body{
+	background-color: palegreen;	
+}
+ol{
+	list-style-type: square;
+}
+ol ol ol {
+	list-style-type: none;
+}
+a:link, a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	background-color: pink;
+}
+ol ol a:hover {
+	background-color: grey;
+}
+a:active{
+	color: yellow;
+}
+a {
+	display: inline-block;
+}
+a::first-letter {
+	font-size: 200%;
+}

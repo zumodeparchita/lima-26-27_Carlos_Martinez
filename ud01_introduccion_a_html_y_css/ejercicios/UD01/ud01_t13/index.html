@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con estilos</title>
+    <meta name="author" content="Carlos Martinez">
+    <meta name="description" content="Tarea UD01_T13 | LIMA | Formulario con estilos">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required="required"
+                pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,29}">
+        </p>
+        <p>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" required="required"
+                pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,49}">
+        </p>
+        <p>
+            <label for="correo">Correo electrónico: </label>
+            <input type="email" id="correo" name="correo" required="required">
+        </p>
+        <p>
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad" required="required" min="16" max="99">
+        </p>
+        <p>
+            <label for="telefono">Teléfono: </label>
+            <input type="text" id="telefono" name="telefono"
+                pattern="[0-9]{9}">
+        </p>
+        <p>
+            <label for="codPostal">Código Postal:</label>
+            <input type="text" id="codPostal" name="codPostal" required="required"
+                pattern="[0-9]{5}">
+        </p>
+        <p>
+            <label for="hermanos">Número de hermanos: </label>
+            <input type="number" id="hermanos" name="hermanos" min="0" max="15">
+        </p>
+        <p>
+            <label for="web">Página web personal: </label>
+            <input type="url" id="web" name="web">
+        </p>
+        <input type="submit" value="Enviar" >
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>
