@@ -1,7 +1,7 @@
 body{
 	background-color: palegreen;	
 }
-ol{
+body > ol{
 	list-style-type: square;
 }
 ol ol ol {
