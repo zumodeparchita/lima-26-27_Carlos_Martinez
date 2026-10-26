@@ -1,13 +1,13 @@
 input:required:valid{
     background-color: rgb(123, 255, 123);
-    border: 2px solid rgb(0, 255, 0);
+    border: 2px solid rgb(0, 180, 0);
 }
 input:required:invalid{
     background-color: rgb(249, 49, 49);
     border: 2px solid rgb(255, 0, 0);
 }
 input:optional:valid:not([type="submit"]):not([type="reset"]){ /*Busqué la propiedad ":not" por internet con la intención de no marcar concretamente los botones de restablecer y enviar*/
-    border: 2px solid rgb(0, 255, 0);
+    border: 2px solid rgb(0, 180, 0);
 }
 input:optional:invalid{
     border: 2px solid rgb(255, 0, 0);

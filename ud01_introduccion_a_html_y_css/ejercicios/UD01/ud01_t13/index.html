@@ -9,45 +9,56 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <form action="#" method="post">
+    <fieldset>
+        <legend>Datos:</legend>
+    <form action="#" method="post" id="registro">
         <p>
             <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" required="required"
+            <br>
+            <input type="text" id="nombre" name="nombre" required="required" minlength="3" maxlength="30"
                 pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,29}">
         </p>
         <p>
             <label for="apellidos">Apellidos: </label>
-            <input type="text" id="apellidos" name="apellidos" required="required"
+            <br>
+            <input type="text" id="apellidos" name="apellidos" required="required" minlength="3" maxlength="50"
                 pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,49}">
         </p>
         <p>
             <label for="correo">Correo electrónico: </label>
+            <br>
             <input type="email" id="correo" name="correo" required="required">
         </p>
         <p>
             <label for="edad">Edad: </label>
+            <br>
             <input type="number" id="edad" name="edad" required="required" min="16" max="99">
         </p>
         <p>
             <label for="telefono">Teléfono: </label>
+            <br>
             <input type="text" id="telefono" name="telefono"
                 pattern="[0-9]{9}">
         </p>
         <p>
             <label for="codPostal">Código Postal:</label>
+            <br>
             <input type="text" id="codPostal" name="codPostal" required="required"
                 pattern="[0-9]{5}">
         </p>
         <p>
             <label for="hermanos">Número de hermanos: </label>
+            <br>
             <input type="number" id="hermanos" name="hermanos" min="0" max="15">
         </p>
         <p>
             <label for="web">Página web personal: </label>
+            <br>
             <input type="url" id="web" name="web">
         </p>
         <input type="submit" value="Enviar" >
         <input type="reset" value="Restablecer">
+        </fieldset>
     </form>
 </body>
 </html>
