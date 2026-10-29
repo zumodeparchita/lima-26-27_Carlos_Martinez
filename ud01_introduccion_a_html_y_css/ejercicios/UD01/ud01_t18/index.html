@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estilizado II</title>
+    <meta name="author" content="Carlos Martinez">
+    <meta name="description" content="UD01_T18 Formulario Estilizado">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <fieldset>
+        <legend>1. Datos Personales: </legend>
+
+    <form action="#" method="post"></form>
+    <label for="name">Nombre:</label> 
+    <input type="text" name="Nombre" id="name" placeholder="Tu nombre" required="required" 
+    pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,39}">
+    <br><br>
+    <label for="last-name">Apellidos:</label> 
+    <input type="text" name="Apellidos" id="last-name" placeholder="Tus apellidos" required="required"
+    pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,39}">
+    <br><br>
+    <label for="password">Contraseña:</label> 
+    <input type="password" name="contrasena" id="password" placeholder="8-20 caracteres" required="required"
+    pattern="(?=.*[A-Za-z])(?=.*\d).{8,20}">
+    <br><br>
+    <label for="email">Correo electrónico:</label> 
+    <input type="email" name="correo" id="email" placeholder="nombre@ejemplo.com" required="required">
+    <br><br>
+    <label for="phone">Teléfono: </label> 
+    <input type="tel" name="telefono" id="phone" placeholder="123456789" minlength="9" maxlength="9">
+    <br><br>
+    <label for="birth-date">Fecha de Nacimiento: </label> 
+    <input type="date" name="fecha-nacimiento" id="birth-date" required="required" min="1950-01-01" max="2010-12-31">
+    <br><br>
+    <label for="age">Edad: </label> 
+    <input type="number" name="edad" id="age" required="required" min="14" max="100" placeholder="Tu edad">
+    <br><br>
+    <label for="search">Buscar un taller: </label> 
+    <input type="search" name="buscar" id="search" placeholder="Ej. programación">
+    </fieldset>
+    <fieldset>
+        <legend>2. Inscripción: </legend>
+    <form action="#" method="post"></form>
+    <label for="inscription-date">Fecha y hora de inscripción</label>
+    <input type="datetime-local" name="fecha-incripcion" id="inscription-date" required="required" min="2026-01-01T00:00" max="2027-12-31T23:59" >
+    <br><br>
+    <label for="month">Mes preferido: </label>
+    <input type="month" name="mes-preferido" id="month" min="2027-01" max="2027-12">
+    <br><br>
+    <label for="week">Semana preferida: </label>
+    <input type="week" name="semana-preferida" id="week" min="2027-W01" max="2027-W52">
+    <br><br>
+    <label for="hour">Hora preferida: </label>
+    <input type="time" name="hora-preferida" id="hour" required="required" min="09:00" max="20:00">
+    <br>
+    <p>Modalidad de asistencia:</p>
+    <input type="radio" name="modalidad" id="mode1" required="required" checked>
+    <label for="mode1">Presencial</label>
+    <input type="radio" name="modalidad" id="mode2" required="required">
+    <label for="mode2">Online</label>
+    <br>
+    <p>Talleres de interés</p>
+    <input type="checkbox" name="programacion" id="interes1">
+    <label for="interes1">Programación</label>
+    <input type="checkbox" name="redes" id="interes2">
+    <label for="interes2">Redes</label>
+    <input type="checkbox" name="diseño" id="interes3">
+    <label for="interes3">Diseño Web</label>
+    <br><br>
+    <label for="sesiones">Número de sesiones:</label>
+    <input type="range" name="nSesiones" id="sesiones" min="1" max="10">
+    <br><br>
+    <label for="dni">Documento identificativo:</label>
+    <input type="file" name="dni" id="dni" accept=".pdf">
+    </fieldset>
+
+    <fieldset>
+        <legend>Información adicional: </legend>
+    <form action="#" method="post"></form>
+
+    <label for="web-page">Página Web:</label>
+    <input type="url" name="pagina-web" id="web-page" placeholder="https://ejemplo.com">
+    <br><br>
+    <label for="invitation">Código de invitación:</label>
+    <input type="text" name="invitacion" id="invitation" pattern="[A-Za-z0-9]{4,8}" 
+    title="El código debe tener entre 4 y 8 caracteres alfanuméricos (solo letras y números)." placeholder="Ej: A1B2C3D4">
+    <br><br>
+    <label for="color">Color preferido: </label>
+    <input type="color" name="color" id="color">
+    <br><br>
+    <label for="comments">Comentarios: </label>
+    <textarea name="comentarios" id="comments" placeholder="Escribe tus comentarios" maxlength="300"></textarea>
+   
+<input type="hidden" name="codigo_campana" value="CAMPANA_2026">
+<br><br>
+<button type="submit">Enviar</button>
+<button type="reset">Restablecer</button>
+
+</fieldset>
+</body>
+</html>
