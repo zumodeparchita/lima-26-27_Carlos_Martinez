@@ -1,7 +1,19 @@
+:root{
+    --marfil: #f7f0df;
+    --papel: #fffaf0;
+    --beige: #eee0c5;
+    --beige-oscuro: #dfc79d;
+    --ocre: #a77736;
+    --ocre-oscuro: #68451f;
+    --tinta: #352819;
+    --tinta-suave: #6e5a42;
+    --borde: #b89a6b;
+    --hover: #f0d49a;
+}
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 .texto-manuscrito {
-      font-family: 'Handlee', cursive;
-    }
+    font-family: 'Handlee', cursive;
+}
 html{
     background-color:var(--beige)
 }
@@ -21,25 +33,46 @@ table{
     margin-left: auto;
     margin-right: auto;
 }
-tbody>tr:nth-child(1) th {
+img {
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--borde);
+    padding: 3px;
+    background-color: var(--marfil);
+}
+.foto-monarca{
+    text-align: center;
+}
+th, td{
+    border-bottom: 2px dotted var(--borde);
+    border-top: 2px dotted var(--borde);
+    border-left: 2px solid var(--marfil);
+    border-right: 2px solid var(--marfil);
+    background-color: var(--beige);
+    text-align: left;
+    vertical-align:middle;
+}
+tbody th {
     height: 40px;
     width: 100px;
     background-color: var(--ocre-oscuro);
     color: var(--marfil);
     text-align: center;
 }
+tbody td{
+    padding: 0.5em;
+}
+tbody>tr:nth-child(odd) td{
+    background-color: var(--papel);
+}
 tr:nth-child(1) th:last-child {
     background-color: var(--ocre);
 }
-
 tr:nth-child(2) th {
     height: 40px;
     background-color: var(--beige-oscuro);
     color: var(--tinta);
     text-align: center;
-}
-tbody>tr:nth-child(odd) td{
-    background-color: var(--papel);
 }
 td:nth-child(n+3){
     text-align: center;
@@ -56,24 +89,18 @@ tbody>tr>td:nth-child(3){
 td:nth-child(n+4){
     font-family:Georgia, 'Times New Roman', Times, serif
 }
-th, td{
-    border-bottom: 2px dotted var(--borde);
-    border-top: 2px dotted var(--borde);
-    border-left: 2px solid var(--marfil);
-    border-right: 2px solid var(--marfil);
-    background-color: var(--beige);
-    text-align: left;
-    vertical-align:middle;
-}
 tbody tr:hover td{
     background-color: var(--beige-oscuro);
+}
+tfoot td{
+    border-bottom: 1px dotted var(--ocre);
 }
 tfoot > tr > th{
     background-color: var(--ocre);
     color: var(--marfil);
     text-align: center;
 }
-tfoot > tr > td:nth-child(1) {
+tfoot tr td:nth-child(1) {
     height: 30px;
     background-color: var(--beige-oscuro);
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -81,32 +108,11 @@ tfoot > tr > td:nth-child(1) {
     color: var(--ocre-oscuro);
     font-weight: bold;
 }
-tfoot > tr > td:nth-child(n+2){
+tfoot tr td:nth-child(n+2){
     height: 30px;
     background-color: var(--beige-oscuro);
     color: var(--tinta);
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-}
-td > img {
-    width: 60px;
-    height: 80px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 1.5px solid var(--borde);
-    padding: 3px;
-}
-:root{
-    --marfil: #f7f0df;
-    --papel: #fffaf0;
-    --beige: #eee0c5;
-    --beige-oscuro: #dfc79d;
-    --ocre: #a77736;
-    --ocre-oscuro: #68451f;
-    --tinta: #352819;
-    --tinta-suave: #6e5a42;
-    --borde: #b89a6b;
-    --hover: #f0d49a;
 }
