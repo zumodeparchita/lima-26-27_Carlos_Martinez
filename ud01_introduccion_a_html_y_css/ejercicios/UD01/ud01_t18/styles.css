@@ -1,0 +1,32 @@
+fieldset{
+    margin-bottom: 10px;
+    font-size:1.25em;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+fieldset > :not(legend) {
+ font-size: 15px;
+}
+input{
+    background-color: lightgrey;
+    border: none;
+}
+input:valid{
+    background-color: lightgreen;
+    color: darkgreen
+}
+input:invalid{
+    background-color: #ff9090;
+    color: darkred;
+}
+input:invalid:required{
+    background-color: rgb(230, 58, 72)
+}
+input:valid:required{
+    background-color: lightgreen;
+    color: darkgreen
+}
+input:focus{
+    border: 2px solid blue;
+    outline: none;
+}

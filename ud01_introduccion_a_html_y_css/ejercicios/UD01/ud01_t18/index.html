@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <form action="#" method="post">
     <fieldset>
-        <legend>1. Datos Personales: </legend>
-
-    <form action="#" method="post"></form>
+        <legend>1. Datos Personales: </legend>    
     <label for="name">Nombre:</label> 
     <input type="text" name="Nombre" id="name" placeholder="Tu nombre" required="required" 
-    pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,39}">
+    pattern="[A-ZÁÉÍÓÚÑ][A-Za-záéíóúüñÁÉÍÓÚÑ \-]{2,39}" autofocus>
     <br><br>
     <label for="last-name">Apellidos:</label> 
     <input type="text" name="Apellidos" id="last-name" placeholder="Tus apellidos" required="required"
@@ -42,7 +41,6 @@
     </fieldset>
     <fieldset>
         <legend>2. Inscripción: </legend>
-    <form action="#" method="post"></form>
     <label for="inscription-date">Fecha y hora de inscripción</label>
     <input type="datetime-local" name="fecha-incripcion" id="inscription-date" required="required" min="2026-01-01T00:00" max="2027-12-31T23:59" >
     <br><br>
@@ -78,7 +76,6 @@
 
     <fieldset>
         <legend>Información adicional: </legend>
-    <form action="#" method="post"></form>
 
     <label for="web-page">Página Web:</label>
     <input type="url" name="pagina-web" id="web-page" placeholder="https://ejemplo.com">
@@ -95,9 +92,9 @@
    
 <input type="hidden" name="codigo_campana" value="CAMPANA_2026">
 <br><br>
-<button type="submit">Enviar</button>
-<button type="reset">Restablecer</button>
-
 </fieldset>
+<button type="submit">Consultar disponibilidad</button>
+<button type="reset">Restablecer</button>
+</form>
 </body>
 </html>
