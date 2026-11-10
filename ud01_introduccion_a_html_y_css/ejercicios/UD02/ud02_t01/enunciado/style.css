@@ -4,6 +4,12 @@
     --verde-oscuro: rgb(22, 58, 46);
     --amarillo-claro: khaki;
     --oro: rgb(205, 174, 0);
+
+    font-size: 0.95em;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 body {
@@ -15,11 +21,11 @@ article {
 border: 2px transparent grey;
 border-radius: 0% 5% 5% 5%;
 box-shadow: 5px 5px 10px  var(--verde-oscuro);
-height: 430px;
+height: 440px;
 width: 300px;
 margin: 0 auto;
-padding: 1.5em;
-margin-top: calc(calc(100vh - 430px)/2);
+padding: 1.5rem;
+margin-top: calc(calc(100vh - 440px)/2);
 }
 
 img {
@@ -54,7 +60,7 @@ background-color: var(--verde);
 color: var(--verde-oscuro);
 text-align: center;
 display: block;
-padding: 0.25em 1.2em;
+padding: 0.25rem 1.2rem;
 border-radius: 5px;
 text-decoration: none;
 }
