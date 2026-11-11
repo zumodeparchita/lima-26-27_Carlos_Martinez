@@ -1,0 +1,149 @@
+:root {
+    --violeta-oscuro: rgb(54, 43, 91);
+    --gris: rgb(112, 119, 135);
+    --violeta-claro: rgb(195, 177, 235);
+    --borde: 2px solid rgba(145, 124, 190, 0.45);
+
+    font-size: 0.8em;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #7775c9 0%, #bd83c2 48%, #75a9d4 100%);
+    color: var(--violeta-oscuro);
+}
+
+article {
+border-radius: 15px;
+background-color: rgb(255, 255, 255, 0.7);
+height: 600px;
+width: 700px;
+padding: 1.5em;
+margin: 0 auto;
+margin-top: calc(calc(100vh - 600px) / 2);
+}
+
+header {
+    text-align: right;
+    border-bottom: var(--borde);
+    padding-bottom: 1em;
+    
+}
+
+h1 {
+font-size: 2rem;
+color: var(--violeta-oscuro);
+
+
+}
+
+.fecha {
+font-size: 0.9rem;
+    color: var(--gris);
+}
+
+.tiempo-actual {
+    padding-left: 2em;
+    margin: 2em 0;
+    
+
+}
+
+.temperatura {
+    text-align: left;
+    color: var(--violeta-oscuro);
+    display: inline-block;
+    
+}
+
+.valor {
+    font-size: 9rem;
+    display: inline;
+    font-weight: bold;
+    
+}
+
+.estado {
+    font-weight: bold;
+}
+
+.imagen-tiempo {
+float: right;
+
+}
+
+.imagen-tiempo img {
+    height: 250px;
+}
+
+.detalles {
+    color: var(--gris);
+    font-size: 0.8rem;    
+}
+
+.detalles p {
+color: var(--violeta-claro);
+}
+
+.detalles strong {
+    color: var(--violeta-oscuro);
+
+}
+
+.prevision {
+   color: var(--violeta-oscuro);
+}
+
+.prevision h2 {
+    padding-bottom: 0.25em;
+    border-bottom: var(--borde);
+
+}
+
+.capsula{
+background-color: var(--violeta-oscuro);
+border-radius: 5px;
+padding: 2px;
+
+}
+
+table {
+    margin: 0 auto;
+
+}
+
+th {
+    color: white;
+}
+
+td{
+   padding: 5px 2em;
+   text-align: center;
+
+}
+
+td:not(:last-child), th:not(:last-child) {
+    border-right: var(--borde);
+    
+}
+
+.iconos img {
+    height: 35px;
+
+}
+
+.maximas {
+font-size: 1rem;
+color: var(--violeta-oscuro);
+font-weight: bold;
+}
+
+.minimas {
+    font-size: 0.9rem;
+    color: var(--gris);
+
+}

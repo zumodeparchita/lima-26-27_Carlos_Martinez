@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel meteorológico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <article>
+        <header>
+            <h1>Ourense</h1>
+            <time datetime="2026-11-06" class="fecha">Viernes, 6 de noviembre</time>
+        </header>
+
+        <section class="tiempo-actual">
+            <div class="temperatura">
+                <p class="valor">18°</p>
+                <p class="estado">Parcialmente nublado</p>
+                <p class="detalles">Sensación térmica: <strong>17°</strong></p>
+                <p class="detalles">Humedad: <strong>64 %</strong></p>
+                <p class="detalles">Viento: <strong>12 km/h</strong></p>
+
+            </div>
+            <div class="imagen-tiempo">
+                <img src="img/nubes-sol.svg" alt="Parcialmente nublado">
+            </div>
+        </section>
+
+        <section class="prevision">
+            <h2>Predicción para 7 días</h2>
+            <table>
+                <tbody>
+                    <tr class="dias">
+                        <th scope="col"><span class="capsula">Sáb</span></th>
+                        <th scope="col"><span class="capsula">Dom</span></th>
+                        <th scope="col"><span class="capsula">Lun</span></th>
+                        <th scope="col"><span class="capsula">Mar</span></th>
+                        <th scope="col"><span class="capsula">Mié</span></th>
+                        <th scope="col"><span class="capsula">Jue</span></th>
+                        <th scope="col"><span class="capsula">Vie</span></th>
+                    </tr>
+                    <tr class="iconos">
+                        <td><img src="img/sol.svg" alt="Soleado"></td>
+                        <td><img src="img/nubes-sol.svg" alt="Parcialmente nublado"></td>
+                        <td><img src="img/lluvia.svg" alt="Lluvia"></td>
+                        <td><img src="img/nublado.svg" alt="Nublado"></td>
+                        <td><img src="img/lluvia.svg" alt="Lluvia"></td>
+                        <td><img src="img/nubes-sol.svg" alt="Parcialmente nublado"></td>
+                        <td><img src="img/sol.svg" alt="Soleado"></td>
+                    </tr>
+                    <tr class="maximas">
+                        <td>20°</td>
+                        <td>19°</td>
+                        <td>16°</td>
+                        <td>17°</td>
+                        <td>15°</td>
+                        <td>18°</td>
+                        <td>21°</td>
+                    </tr>
+                    <tr class="minimas">
+                        <td>11°</td>
+                        <td>12°</td>
+                        <td>10°</td>
+                        <td>9°</td>
+                        <td>8°</td>
+                        <td>10°</td>
+                        <td>12°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+
+
+</body>
+
+</html>
