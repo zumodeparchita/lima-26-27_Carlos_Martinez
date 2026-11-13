@@ -6,9 +6,11 @@
 
     font-size: 0.8em;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,62 +20,59 @@ body {
 }
 
 article {
-border-radius: 15px;
-background-color: rgb(255, 255, 255, 0.7);
-height: 600px;
-width: 700px;
-padding: 1.5em;
-margin: 0 auto;
-margin-top: calc(calc(100vh - 600px) / 2);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.7);
+    height: 600px;
+    width: 700px;
+    padding: 1.5em;
+    margin: 0 auto;
+    margin-top: calc(calc(100vh - 600px) / 2);
 }
 
 header {
     text-align: right;
     border-bottom: var(--borde);
     padding-bottom: 1em;
-    
 }
 
 h1 {
-font-size: 2rem;
-color: var(--violeta-oscuro);
-
+    font-size: 1.8rem;
+    color: var(--violeta-oscuro);
+    margin: 0;
 
 }
 
 .fecha {
-font-size: 0.9rem;
+    font-size: 0.9rem;
     color: var(--gris);
 }
 
 .tiempo-actual {
     padding-left: 2em;
     margin: 2em 0;
-    
-
 }
 
 .temperatura {
     text-align: left;
     color: var(--violeta-oscuro);
     display: inline-block;
-    
+
 }
 
 .valor {
-    font-size: 9rem;
+    font-size: 10rem;
     display: inline;
     font-weight: bold;
-    
+    padding-right: 0.8em;
+
 }
 
 .estado {
-    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .imagen-tiempo {
-float: right;
-
+    display: inline-block;
 }
 
 .imagen-tiempo img {
@@ -82,11 +81,11 @@ float: right;
 
 .detalles {
     color: var(--gris);
-    font-size: 0.8rem;    
+    font-size: 0.9rem;
 }
 
 .detalles p {
-color: var(--violeta-claro);
+    color: var(--violeta-claro);
 }
 
 .detalles strong {
@@ -95,40 +94,42 @@ color: var(--violeta-claro);
 }
 
 .prevision {
-   color: var(--violeta-oscuro);
+    color: var(--violeta-oscuro);
 }
 
 .prevision h2 {
-    padding-bottom: 0.25em;
+    padding-bottom: 0.8rem;
     border-bottom: var(--borde);
-
+    font-size: 1.3rem;
 }
 
-.capsula{
-background-color: var(--violeta-oscuro);
-border-radius: 5px;
-padding: 2px;
+.capsula {
+    background-color: var(--violeta-oscuro);
+    border-radius: 5px;
+    padding: 2px;
 
 }
 
 table {
     margin: 0 auto;
-
+    border-collapse: collapse;
 }
 
 th {
     color: white;
 }
 
-td{
-   padding: 5px 2em;
-   text-align: center;
+td {
+    padding: 5px 2.2rem;
+    text-align: center;
 
 }
 
-td:not(:last-child), th:not(:last-child) {
+td:not(:last-child),
+th:not(:last-child) {
     border-right: var(--borde);
-    
+
+
 }
 
 .iconos img {
@@ -137,9 +138,9 @@ td:not(:last-child), th:not(:last-child) {
 }
 
 .maximas {
-font-size: 1rem;
-color: var(--violeta-oscuro);
-font-weight: bold;
+    font-size: 1rem;
+    color: var(--violeta-oscuro);
+    font-weight: bold;
 }
 
 .minimas {
