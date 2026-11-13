@@ -39,7 +39,6 @@ h1 {
     font-size: 1.8rem;
     color: var(--violeta-oscuro);
     margin: 0;
-
 }
 
 .fecha {
@@ -56,7 +55,6 @@ h1 {
     text-align: left;
     color: var(--violeta-oscuro);
     display: inline-block;
-
 }
 
 .valor {
@@ -64,7 +62,6 @@ h1 {
     display: inline;
     font-weight: bold;
     padding-right: 0.8em;
-
 }
 
 .estado {
@@ -90,7 +87,6 @@ h1 {
 
 .detalles strong {
     color: var(--violeta-oscuro);
-
 }
 
 .prevision {
@@ -107,7 +103,6 @@ h1 {
     background-color: var(--violeta-oscuro);
     border-radius: 5px;
     padding: 2px;
-
 }
 
 table {
@@ -122,19 +117,15 @@ th {
 td {
     padding: 5px 2.2rem;
     text-align: center;
-
 }
 
 td:not(:last-child),
 th:not(:last-child) {
     border-right: var(--borde);
-
-
 }
 
 .iconos img {
     height: 35px;
-
 }
 
 .maximas {
@@ -146,5 +137,4 @@ th:not(:last-child) {
 .minimas {
     font-size: 0.9rem;
     color: var(--gris);
-
 }
