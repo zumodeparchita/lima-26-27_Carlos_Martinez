@@ -1,0 +1,20 @@
+:root{
+    --fondo-body: white;
+    --fondo-contenedores: salmon;
+}
+body{
+    background-color: var(--fondo-body);
+}
+*{
+    box-sizing: border-box;
+}
+.contenedor-uno{
+    background-color: var(--fondo-contenedores);
+    height: 48%;
+    display: block;
+}
+.contenedor-dos{
+    background-color: var(--fondo-contenedores);
+    height: 48%;
+    display: block;
+}
