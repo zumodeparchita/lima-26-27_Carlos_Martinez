@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.marco{
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid red;
+    
+}
+img{
+    display: block;
+}
+h2{
+    background-color: red;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marco h2 {
+    position: absolute;
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+.pagina1 .marco .top{
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.pagina2 .marco .top{
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.pagina3 .marco .top{
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.pagina4 .marco .top{
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    writing-mode: vertical-lr;
+
+}
